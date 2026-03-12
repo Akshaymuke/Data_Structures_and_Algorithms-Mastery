@@ -37,8 +37,8 @@ async def available_rides(min_price:int ,max_price:int):
     # Slicing the sorted list to get the results
     results = DRIVER_PRICES[left : right + 1]
     return {
-        "min_selected": min_price,
-        "max_selected": max_price,
-        "count": len(results),
+        "min_selected_price": min_price,
+        "max_selected_price": max_price,
+        "count of rides available": len(results),
         "available_rides": results
     }
